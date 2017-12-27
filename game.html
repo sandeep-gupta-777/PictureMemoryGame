@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    <!--<script sgame.jst.js"></script>-->
+</head>
+<body >
+
+<div class="container center-vertical center-horizontal" style="width: 100vw;height: 100vh;">
+
+    <div class="container-wrapper border-dark " style="height: 80vh">
+
+        <!--header starts-->
+        <div class="topStrip justify-content-space-between"
+             style="width: 100%;height:70px; background-color: #154545">
+            <p class="text-white px-1 " style="font-family: 'Segoe UI';font-weight: 300;font-size: 25px">Welcome!</p>
+            <div class=" center-vertical px-1">
+                <!--<button style="display: inline" id="start">Start</button>-->
+                <button style="display: inline" onclick="startGame()" id="start">Start</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <!--header ends-->
+
+        <!--grid starts-->
+        <div class="rowsWrapper center-vertical center-horizontal " style="width: 100%;height: 60vh">
+            <div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+
+                </div>
+                <div class="row">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+
+                </div>
+            </div>
+        </div>
+        <!--grid end-->
+
+        <!--hint image wrapper starts-->
+        <div id="imageHintWrapper" class="sidebar bg-darkish center-vertical justify-content-space-around" style="width: 100%; height: 150px;opacity: 1">
+
+            <div><img id="imageHint" onclick="imageClick(this)" style="width: 100px; height: 100px;" alt="."></div>
+            <div id="timer" class="text-white" style="font-family: 'Segoe UI';font-weight: 300;font-size: 45px">20</div>
+        </div>
+        <!--hint image wrapper ends-->
+
+    </div>
+</div>
+<!--</div>-->
+
+</body>
+</html>
+
+
+

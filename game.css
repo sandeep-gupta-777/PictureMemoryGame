@@ -1,0 +1,110 @@
+
+
+.row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.border1{
+    border: 1px solid red;
+
+}
+/*following is for styling*/
+.body{
+    /*background-color: ;*/
+}
+
+.center-horizontal{
+    display: flex;
+    justify-content: center;
+}
+.align-left{
+    display: flex;
+    justify-content: flex-start;
+}
+.center-vertical{
+    display: flex;
+    align-items: center;
+}
+.text-white{
+    color: white !important;
+}
+.justify-content-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.justify-content-space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+button    /* Or better yet try giving an ID or class if possible*/
+{
+
+    background: none;
+    box-shadow:none;
+    border-radius: 0px;
+    border: 1px solid #084646;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.81);
+}
+.px-1{
+    padding-left:10px ;
+    padding-right:10px ;
+}
+.border-dark{
+    border:1px solid #084646;
+}
+.bg-darkish{
+    background-color: #084646;
+}
+.gridImage{
+    width: 100px;
+    height: 100px;
+    border: 2px white solid;
+}
+
+.shakeMe {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.success{
+    border: 2px solid green;
+}
+
+@media(max-width: 780px){
+    .container-wrapper{
+        width: 100vw !important;
+    }
+}
+
+@media(min-width: 780px){
+    .container-wrapper{
+        width: 50vw !important;
+    }
+}
